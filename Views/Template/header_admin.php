@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/<?php echo $data['page_style_css']?>">
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/<?php echo $data['page_style_pedidos_css']?>">
+    <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/<?php echo $data['estiloProv'];?>">
   </head>
   <body class="app sidebar-mini">
     <div id="divLoading" >

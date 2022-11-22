@@ -16,10 +16,12 @@
 		public function dashboard()
 		{
 			$data['page_id'] = 2;
-			$data['page_tag'] = "Dashboard - Tienda Virtual";
-			$data['page_title'] = "Dashboard - Tienda Virtual";
-			$data['page_name'] = "dashboard";
+			$data['page_tag'] = "Proveedor - Tienda Virtual";
+			$data['page_title'] = "Proveedor - Tienda Virtual";
+			$data['page_name'] = "Proveedor";
 			$data['page_functions_js'] = "functions_dashboard.js";
+			$data['estiloProv'] = "proveedor.css";
+			$data['projs'] = "proveedor.js";
 			$this->views->getView($this,"dashboard",$data);
 		}
 

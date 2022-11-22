@@ -4,10 +4,10 @@
         <div class="app-sidebar__user">
 
             <div class="ml-5 group">
-                <div class="row">
-                    <p class="app-sidebar__user-name ml-3"><?= $_SESSION['userData']['nombres']; ?></p>
-                </div>
-                <p class="app-sidebar__user-designation"><?= $_SESSION['userData']['nombrerol']; ?></p>
+                    <center>
+                        <p class="app-sidebar__user-name "><b><?= $_SESSION['userData']['nombres']; ?></b></p>
+                        <p class="app-sidebar__user-designation"><?= $_SESSION['userData']['nombrerol']; ?></p>
+                    </center>
             </div>
 
 
@@ -17,15 +17,15 @@
             <?php if (!empty($_SESSION['permisos'][1]['r'])) { ?>
                 <li>
                     <a class="app-menu__item" href="<?= base_url(); ?>/dashboard">
-                        <i class="app-menu__icon fa fa-dashboard"></i>
-                        <span class="app-menu__label">Dashboard</span>
+                        <i class="fa fa-user"></i>
+                        <span class="app-menu__label">Porveedores</span>
                     </a>
                 </li>
             <?php } ?>
             <?php if (!empty($_SESSION['permisos'][2]['r'])) { ?>
                 <li class="treeview">
                     <a class="app-menu__item" href="#" data-toggle="treeview">
-                        <i class="app-menu__icon fa fa-users" aria-hidden="true"></i>
+                        <i class="app-menu__icon fa fa-users"></i>
                         <span class="app-menu__label">Usuarios</span>
                         <i class="treeview-indicator fa fa-angle-right"></i>
                     </a>
@@ -64,10 +64,13 @@
                 <li>
                     <a class="app-menu__item" href="<?= base_url(); ?>/pedidos">
                         <i class="app-menu__icon fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span class="app-menu__label">Pedidos</span>
+                        <span class="app-menu__label">Registro Porductos</span>
                     </a>
                 </li>
             <?php } ?>
+
+
+
             <li>
                 <a class="app-menu__item" href="<?= base_url(); ?>/logout">
                     <i class="app-menu__icon fa fa-sign-out" aria-hidden="true"></i>
