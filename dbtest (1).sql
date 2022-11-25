@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2022 a las 21:19:49
+-- Tiempo de generación: 25-11-2022 a las 06:26:38
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.27
 
@@ -96,7 +96,8 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`idpersona`, `identificacion`, `nombres`, `apellidos`, `telefono`, `email_user`, `password`, `nit`, `nombrefiscal`, `direccionfiscal`, `token`, `rolid`, `datecreated`, `status`) VALUES
-(4, '4', 'Miguel', 'Silva', 997748525, 'miguel@mail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '', '', '', '', 1, '2022-11-06 19:19:07', 1);
+(4, '75610782', 'Miguel', 'Silva', 997748525, 'miguel@mail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '', '', '', '', 1, '2022-11-06 19:19:07', 1),
+(13, '1234567', 'Juan', 'Perez', 123456789, 'juan@mail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '', '', '', '', 3, '2022-11-22 13:00:12', 1);
 
 -- --------------------------------------------------------
 
@@ -118,7 +119,7 @@ CREATE TABLE `rol` (
 INSERT INTO `rol` (`idrol`, `nombrerol`, `descripcion`, `status`) VALUES
 (1, 'Administrador', 'Acceso a todo el sistema 	', 1),
 (2, 'Supervisores', 'Supervisores', 1),
-(3, 'test', 'mini test', 1);
+(3, 'vendedores', 'vendedores en atención al cliente', 1);
 
 --
 -- Índices para tablas volcadas
@@ -171,7 +172,7 @@ ALTER TABLE `permisos`
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `idpersona` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idpersona` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`

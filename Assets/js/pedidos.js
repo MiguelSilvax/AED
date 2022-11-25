@@ -39,18 +39,6 @@ class LinkedList {
         }
     }
 
-    findNode(value) {
-        let current = this.head;
-        while (current) {
-            if (current.value === value) {
-                return current;
-            }
-            current = current.next;
-        }
-        return null;
-    }
-
-
     print() {
         let current = this.head;
         while (current) {

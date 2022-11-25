@@ -18,7 +18,7 @@
                 <li>
                     <a class="app-menu__item" href="<?= base_url(); ?>/dashboard">
                         <i class="fa fa-user"></i>
-                        <span class="app-menu__label">Porveedores</span>
+                        <span class="app-menu__label"> Proveedores</span>
                     </a>
                 </li>
             <?php } ?>

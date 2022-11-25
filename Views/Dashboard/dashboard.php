@@ -39,9 +39,11 @@
       </div>
     </form>
 
-    <div class="col-4 mt-4">
-      <label for="">Buscar</label>
-      <input class="form-control" type="text" name="">
+
+    <div class="col-4">
+      <span>Buscar</span>
+      <input class="form-control" type="text" name="" id="inputBuscar" placeholder="Buscar por nombre">
+      <button class="btn btn-primary" type="button" id="btnBuscar">Buscar</button>
     </div>
     <div class="col-12 mt-4" id="productos">
       <table class="table table-striped" id="lista">
@@ -56,7 +58,7 @@
       </table>
     </div>
     <div class="btn-group" role="group" aria-label="Button group">
-      <button class="btn btn-primary" type="button" onclick="sort(0);">Ordenar</button>
+      <button class="btn btn-primary" type="button" onclick="sort();">Ordenar</button>
     </div>
     <div role="alert" id="alert"></div>
   </div>

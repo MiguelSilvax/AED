@@ -21,7 +21,6 @@ headerAdmin($data);
                     <div class="field is-grouped">
 
                         <div class="control has-icons-left">
-                            
                             <select class="form-control" aria-label=".form-select-lg example" id="sistemaOperativo" name="sistemaOperativo" onchange="cargar_Modelo( this )">
                                 <option> Sistema operativo</option>
                             </select>
@@ -31,6 +30,11 @@ headerAdmin($data);
                                 <option> Marca </option>
                             </select>
                         </div>
+
+
+
+
+
                         <div class="control has-icons-left">
                             <input class="input" name="modelo" type="text" placeholder="Modelo" autocomplete="off">
                             <span class="icon is-small is-left">
